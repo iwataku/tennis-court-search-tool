@@ -1,0 +1,20 @@
+<h1>#<%= date %></h1>
+<h2>北区 (直近1ヶ月の土日祝空きコート)</h2>
+<% kitaku_courts.forEach(function(r) { %>
+<%= r %><br/>
+<% }); %>
+
+<% if(kitaku_courts.length == 0){ %>
+空きコートはありません。
+<% }; %>
+
+
+<br/>
+<h2>中央区 (直近1ヶ月の土日祝空きコート)</h2>
+<% chuoku_courts.forEach(function(r) { %>
+<%= r %><br/>
+<% }); %>
+
+<% if(chuoku_courts.length == 0){ %>
+空きコートはありません。
+<% }; %>
